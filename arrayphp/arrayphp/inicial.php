@@ -168,7 +168,7 @@ else{
         </nav>
         <br/><br/>
         <center><button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <b>CADASTRAR NOVO USUÁRIO</b>
+            <b>CADASTRAR PRODUTO</b>
         </button></center>
         <br/><br/>
         <div class="row justify-content-center row-cols-2 row-cols-md-3 text-center">
@@ -196,12 +196,24 @@ else{
                     </div>
                 </div>
             </div>
+            <div class="cols">
+                <div class="card mb-4 rounded shadow-sw">
+                    <div class="card-header py-3">
+                       <h3><b>GRAFICO</b></h3>
+                    </div>
+                    <div class="card-body">
+                        <?php
+                            include "grafico.php";
+                        ?>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">CADASTRAR USUARIO</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">CADASTRAR NOVO PRODUTOS</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                 <div class="modal-body text - start">
