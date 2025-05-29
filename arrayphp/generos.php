@@ -24,9 +24,9 @@
         data.addColumn('string', 'Topping');
         data.addColumn('number', 'Slices');
         data.addRows([
-          ['Masculino', <?php echo isset($contagens["Masculino"])?$contagens["Masculino"]:0 ?>],
-          ['Feminino', <?php echo isset($contagens["Feminino"])?$contagens["Feminino"]:0 ?>],
-          ['Outro', <?php echo isset($contagens["Outro"])?$contagens["Outro"]:0 ?>],
+          ['ferro', <?php echo isset($contagens["Masculino"])?$contagens["Masculino"]:0 ?>],
+          ['areia', <?php echo isset($contagens["Feminino"])?$contagens["Feminino"]:0 ?>],
+          ['torneira', <?php echo isset($contagens["Outro"])?$contagens["Outro"]:0 ?>],
         ]);
        
 
