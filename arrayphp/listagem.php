@@ -71,7 +71,11 @@ if (isset($_GET['pesquisa'])) {
       100% { box-shadow: -2px -2px 8px 1px #00ffe1, 2px 2px 8px 1px #0077ff; }
     }
   </style>
-</head>
+  <hr>
+  <nav>
+    &nbsp;&nbsp;<a href="inicial.php" style="color: white; text-decoration: none">HOME |</a><a href="listagem.php" style="color: white; text-decoration: none">  PRODUTOS |</a><a href="gravar.php" style="color: white; text-decoration: none"> SALVAR DADOS |</a><a href="registrodiario.php" style="color white text-decoration none">REFUGO</a> 
+
+  </head>
 <body><div class="container-fluid"></div>
 <div class="container py-5">
   <div class="card shadow-lg">

@@ -118,7 +118,6 @@ button:active {
     <html>
         
     </html><?php
-session_start();
 if(!isset($_SESSION['usuarios'])){
 header("Locatio: index.php");
 }
@@ -173,11 +172,11 @@ else{
         <br/><br/>
         <div class="row justify-content-center row-cols-2 row-cols-md-3 text-center">
             <div class="cols">
-                <div class="card mb-4 rounded shadow-sw">
-                    <div class="card-header py-3">
+                <div class="card mb-3 rounded shadow-sw">
+                    <div class="card-header py-5">
                     <h3><b>PRODUTOS REGISTRADOS</b></h3>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body">  
                         <?php
                             include "usuarios.php";
                         ?>
@@ -187,7 +186,7 @@ else{
             <div class="cols">
                 <div class="card mb-4 rounded shadow-sw">
                     <div class="card-header py-3">
-                       <h3><b>GRAFICO GERAL</b></h3>
+                       <h3><b>TOTAL PRODUZIDO</b></h3>
                     </div>
                     <div class="card-body">
                         <?php
@@ -208,6 +207,32 @@ else{
                     </div>
                 </div>
             </div>
+            <div class="cols">
+                <div class="card mb-1 rounded shadow-sw">
+                    <div class="card-header py-1">
+                       <h3><b>GRAFICO DE PRODUTOS</b></h3>
+                    </div>
+                    <div class="card-body">
+                        <?php
+                            include "tabela.php";
+                        ?>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div style="width: 100rem;">
+            <div class="cols">
+                <div class="card mb-5 rounded shadow-sw">
+                    <div class="card-header py-1">
+                       <h3><b>GRAFICO DE PRODUTOS</b></h3>
+                    </div>
+                    <div class="card-body">
+                        <?php
+                            include "graficolinhas.php";
+                        ?>
+                    </div>
+                </div>
+            </div>        
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -225,6 +250,7 @@ else{
                         <select class="form-select" aria-label="Selecione seu genero" name="genero" required>
                       <option value="Masculino">FERRO</option>
                       <option value="Feminino">AREIA</option>
+                      <option value="Outro">TERRA</option>
                       <option value="Outro">TERRA</option>
                       </select>
                         <br/>

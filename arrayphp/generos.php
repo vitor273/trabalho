@@ -27,12 +27,16 @@
           ['ferro', <?php echo isset($contagens["Masculino"])?$contagens["Masculino"]:0 ?>],
           ['areia', <?php echo isset($contagens["Feminino"])?$contagens["Feminino"]:0 ?>],
           ['torneira', <?php echo isset($contagens["Outro"])?$contagens["Outro"]:0 ?>],
+          ['ferro', <?php echo isset($contagens["Masculino"])?$contagens["Masculino"]:0 ?>],
+          ['ferro', <?php echo isset($contagens["Masculino"])?$contagens["Masculino"]:0 ?>],
+          ['ferro', <?php echo isset($contagens["Masculino"])?$contagens["Masculino"]:0 ?>],
+          ['ferro', <?php echo isset($contagens["Masculino"])?$contagens["Masculino"]:0 ?>],
         ]);
        
 
         // Set chart options
         var options = {
-                       'width':400,
+                       'width':500,
                        'height':300};
 
         // Instantiate and draw our chart, passing in some options.

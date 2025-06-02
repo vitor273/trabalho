@@ -24,6 +24,6 @@
     </script>
   </head>
   <body>
-    <div id="donutchart" style="width: 400px; height: 300px;"></div>
+    <div id="donutchart" style="width: 500px; height: 300px;"></div>
   </body>
 </html>
