@@ -10,151 +10,121 @@
     <style>
         body {
             background-color: #1C1C1C;
-            /* From Uiverse.io by gharsh11032000 */ 
-/* From Uiverse.io by Yaya12085 */ 
-.form-container {
-  width: 320px;
-  border-radius: 0.75rem;
-  background-color: rgba(17, 24, 39, 1);
-  padding: 2rem;
-  color: rgba(243, 244, 246, 1);
+            /* From Uiverse.io by SyedShahzaib7 */ 
+.wrapper {
+  width: 420px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 9%,
+    rgba(9, 9, 121, 1) 68%,
+    rgba(0, 91, 255, 1) 97%
+  );
+  backdrop-filter: blur(9px);
+  color: #fff;
+  border-radius: 12px;
+  padding: 30px 40px;
 }
-
-.title {
+.form-login {
+  font-size: 36px;
   text-align: center;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 700;
 }
-
-.form {
-  margin-top: 1.5rem;
-}
-
-.input-group {
-  margin-top: 0.25rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.input-group label {
-  display: block;
-  color: rgba(156, 163, 175, 1);
-  margin-bottom: 4px;
-}
-
-.input-group input {
+.wrapper .input-box {
+  position: relative;
   width: 100%;
-  border-radius: 0.375rem;
-  border: 1px solid rgba(55, 65, 81, 1);
-  outline: 0;
-  background-color: rgba(17, 24, 39, 1);
-  padding: 0.75rem 1rem;
-  color: rgba(243, 244, 246, 1);
-}
+  height: 50px;
 
-.input-group input:focus {
-  border-color: rgba(167, 139, 250);
+  margin: 30px 0;
 }
-
-.forgot {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  color: rgba(156, 163, 175,1);
-  margin: 8px 0 14px 0;
-}
-
-.forgot a,.signup a {
-  color: rgba(243, 244, 246, 1);
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.forgot a:hover, .signup a:hover {
-  text-decoration: underline rgba(167, 139, 250, 1);
-}
-
-.sign {
-  display: block;
+.input-box input {
   width: 100%;
-  background-color: rgba(167, 139, 250, 1);
-  padding: 0.75rem;
-  text-align: center;
-  color: rgba(17, 24, 39, 1);
+  height: 100%;
+  background: transparent;
   border: none;
-  border-radius: 0.375rem;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder {
+  color: #fff;
+}
+
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+.remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 3px;
+}
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+.wrapper .btn {
+  width: 150px;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  margin-left: 90px;
+  margin-top: 10px;
+}
+.wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
   font-weight: 600;
 }
-
-.social-message {
-  display: flex;
-  align-items: center;
-  padding-top: 1rem;
+.register-link p a:hover {
+  text-decoration: underline;
 }
-
-.line {
-  height: 1px;
-  flex: 1 1 0%;
-  background-color: rgba(55, 65, 81, 1);
 }
-
-.social-message .message {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  color: rgba(156, 163, 175, 1);
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-}
-
-.social-icons .icon {
-  border-radius: 0.125rem;
-  padding: 0.75rem;
-  border: none;
-  background-color: transparent;
-  margin-left: 8px;
-}
-
-.social-icons .icon svg {
-  height: 1.25rem;
-  width: 1.25rem;
-  fill: #fff;
-}
-
-.signup {
-  text-align: center;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  color: rgba(156, 163, 175, 1);
-}}
     </style>
     <body>
         
         <hr/>
         <br/><br/>
         <div class="container-fluid">
-        <div class="row justify-content-center row-cols-1 row-cols-md-3 text-center">
+        <div class="row justify-content-center row-cols-1 row-cols-md-4 text-center">
             <div class="cols">
             <div class="row">
-                <div class="card mb-6 rounded shadow-sw">
-                    <div class="card-header py-3">
-                        <h3>&nbsp;<b>LOGIN</b></h3>
-                    </div>
-                    <div class="card-body">
-                        <form action="login.php" method="post" class="text-start">
-                            <label class="form-label"><b>E-MAIL</b></label>
-                            <input class="form-control" type="email" name="email" required placeholder="Digite o seu e-mail."/>
-                            <br/>
-                            <label class="form-label"><b>SENHA</b></label>
-                            <input class="form-control" type="password" name="senha" required placeholder="Digite sua senha."/>
-                            <br/>
-                            <input type="submit" class="btn btn-outline-success" value="ENTRAR">
+              <br>
+              <div class="card-body">
+<div class="wrapper">
+  <form action="login.php" method="post" class="text-start">
+    <p class="form-login">Login</p>
+    <div class="input-box">
+      <input required="" placeholder="EMAIL" type="email" />
+    </div>
+    <div class="input-box">
+      <input required="" placeholder="SENHA" type="password" />
+    </div>
+    <div class="remember-forgot">
+    </div>
+    <button class="btn" type="submit">Login</button>
+    </div>
+  </form>
+</div>
+
                         </form>
                     </div>
                 </div>
