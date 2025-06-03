@@ -38,6 +38,6 @@
         $_SESSION['quantidades_refugadas'][$novoIndice] = [$quantidadeRefugada];
     
         // Redireciona para a tela de teste ou login
-        header("Location: teste.php");
+        header("Location: inicial.php");
         exit;
     }

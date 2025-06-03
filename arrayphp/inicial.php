@@ -157,7 +157,6 @@ else{
         }
 
     </style>
-    <body class="container-fluid">
         <hr/>
         <nav>
            &nbsp;&nbsp;<a href="inicial.php" style="color: white; text-decoration: none">HOME |</a><a href="listagem.php" style="color: white; text-decoration: none"> PRODUTOS|</a><a href="gravar.php" style="color: white; text-decoration: none"> SALVAR DADOS | </a><a href="registrodiario.php" style="color white; text-decoration; none"> REFUGO</a> 
@@ -170,6 +169,7 @@ else{
             <b>CADASTRAR PRODUTO</b>
         </button></center>
         <br/><br/>
+        <body class="container-fluid">
         <div class="row justify-content-center row-cols-2 row-cols-md-3 text-center">
             <div class="cols">
                 <div class="card mb-3 rounded shadow-sw">
@@ -210,7 +210,7 @@ else{
             <div class="cols">
                 <div class="card mb-1 rounded shadow-sw">
                     <div class="card-header py-1">
-                       <h3><b>GRAFICO DE PRODUTOS</b></h3>
+                       <h3><b>DATAS DE PRODUTOS</b></h3>
                     </div>
                     <div class="card-body">
                         <?php
@@ -251,7 +251,10 @@ else{
                       <option value="Masculino">FERRO</option>
                       <option value="Feminino">AREIA</option>
                       <option value="Outro">TERRA</option>
-                      <option value="Outro">TERRA</option>
+                      <option value="o">TORNEIRA</option>
+                      <option value="i">MANGUEIRA</option>
+                      <option value="u">TIJOLO</option>
+                      <option value="y">CIMENTO</option>
                       </select>
                         <br/>
                         
@@ -260,6 +263,7 @@ else{
                     ...
                 </div>
                 <div class="modal-footer">
+                    <!-- From Uiverse.io by mrhyddenn --> 
                     <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">FECHAR</button>
                 </div>
             </div>

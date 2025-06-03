@@ -109,21 +109,25 @@
             <div class="row">
               <br>
               <div class="card-body">
-<div class="wrapper">
-  <form action="login.php" method="post" class="text-start">
-    <p class="form-login">Login</p>
-    <div class="input-box">
-      <input required="" placeholder="EMAIL" type="email" />
-    </div>
-    <div class="input-box">
-      <input required="" placeholder="SENHA" type="password" />
-    </div>
-    <div class="remember-forgot">
-    </div>
-    <button class="btn" type="submit">Login</button>
-    </div>
-  </form>
-</div>
+<<hr/>
+        <br/><br/>
+        <div class="container-fluid">
+        <div class="row justify-content-center row-cols-1 row-cols-md-3 text-center">
+            <div class="cols">
+            <div class="row">
+                <div class="card mb-6 rounded shadow-sw">
+                    <div class="card-header py-3">
+                        <h3>&nbsp;<b>LOGIN</b></h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="login.php" method="post" class="text-start">
+                            <label class="form-label"><b>E-MAIL</b></label>
+                            <input class="form-control" type="email" name="email" required placeholder="Digite o seu e-mail."/>
+                            <br/>
+                            <label class="form-label"><b>SENHA</b></label>
+                            <input class="form-control" type="password" name="senha" required placeholder="Digite sua senha."/>
+                            <br/>
+                            <input type="submit" class="btn btn-outline-success" value="ENTRAR">
 
                         </form>
                     </div>

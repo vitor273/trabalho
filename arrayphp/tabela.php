@@ -5,16 +5,20 @@
       google.charts.load('current', {'packages':['table']});
       google.charts.setOnLoadCallback(drawTable);
 
-      function drawTable() {
+      function drawTable()  {
+
+        // Create the data table.
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Name');
-        data.addColumn('number', 'Salary');
-        data.addColumn('boolean', 'Full Time Employee');
+        data.addColumn('string', 'PRODUTOS');
+        data.addColumn('number', 'DATAS');
         data.addRows([
-          ['Mike',  {v: 10000, f: '$10,000'}, true],
-          ['Jim',   {v:8000,   f: '$8,000'},  false],
-          ['Alice', {v: 12500, f: '$12,500'}, true],
-          ['Bob',   {v: 7000,  f: '$7,000'},  true]
+          ['ferro', <?php echo isset($contagens["Masculino"])?$contagens["Masculino"]:0 ?>],
+          ['areia', <?php echo isset($contagens["Feminino"])?$contagens["Feminino"]:0 ?>],
+          ['terra', <?php echo isset($contagens["Outro"])?$contagens["Outro"]:0 ?>],
+          ['torneira', <?php echo isset($contagens["o"])?$contagens["o"]:0 ?>],
+          ['mangueira', <?php echo isset($contagens["i"])?$contagens["i"]:0 ?>],
+          ['tijolo', <?php echo isset($contagens["u"])?$contagens["u"]:0 ?>],
+          ['cimento', <?php echo isset($contagens["y"])?$contagens["y"]:0 ?>],
         ]);
 
         var table = new google.visualization.Table(document.getElementById('table_div'));

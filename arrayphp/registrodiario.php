@@ -36,6 +36,7 @@
            </div>
         </nav>
         <br/><br/>
+        <div class="continues">
         <div class="row justify-content-center row-cols-1 row-cols-md-2 text-center">
             <div class="cols">
                 <div class="card mb-2 rounded shadow-sw">

@@ -6,14 +6,19 @@
       google.charts.setOnLoadCallback(drawVisualization);
 
       function drawVisualization() {
-        // Some raw data (not necessarily accurate)
-        var data = google.visualization.arrayToDataTable([
-          ['ferro', 'areia', 'torneira', 'mangueira', 'terra', 'pedra', 'cau'],
-          ['2004/05',  165,      938,         522,             998,           450,      614.6],
-          ['2005/06',  135,      1120,        599,             1268,          288,      682],
-          ['2006/07',  157,      1167,        587,             807,           397,      623],
-          ['2007/08',  139,      1110,        615,             968,           215,      609.4],
-          ['2008/09',  136,      691,         629,             1026,          366,      569.6]
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['ferro', <?php echo isset($contagens["Masculino"])?$contagens["Masculino"]:0 ?>],
+          ['areia', <?php echo isset($contagens["Feminino"])?$contagens["Feminino"]:0 ?>],
+          ['terra', <?php echo isset($contagens["Outro"])?$contagens["Outro"]:0 ?>],
+          ['torneira', <?php echo isset($contagens["o"])?$contagens["o"]:0 ?>],
+          ['mangueira', <?php echo isset($contagens["i"])?$contagens["i"]:0 ?>],
+          ['tijolo', <?php echo isset($contagens["u"])?$contagens["u"]:0 ?>],
+          ['cimento', <?php echo isset($contagens["y"])?$contagens["y"]:0 ?>],
         ]);
 
         var options = {
@@ -21,7 +26,7 @@
           vAxis: {title: 'DIAS'},
           hAxis: {title: 'MESES'},
           seriesType: 'bars',
-          series: {5: {type: 'line'}}
+
         };
 
         var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
@@ -30,7 +35,8 @@
     </script>
   </head>
   <body>
-    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+    <div class="continues-fluid">
+    <div id="chart_div" style=";"></div>
   </body>
 </html>
 
