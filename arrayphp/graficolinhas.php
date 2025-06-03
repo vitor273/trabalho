@@ -13,13 +13,17 @@
         data.addColumn('number', 'Slices');
         data.addRows([
           ['ferro', <?php echo isset($contagens["Masculino"])?$contagens["Masculino"]:0 ?>],
-          ['areia', <?php echo isset($contagens["Feminino"])?$contagens["Feminino"]:0 ?>],
-          ['terra', <?php echo isset($contagens["Outro"])?$contagens["Outro"]:0 ?>],
-          ['torneira', <?php echo isset($contagens["o"])?$contagens["o"]:0 ?>],
-          ['mangueira', <?php echo isset($contagens["i"])?$contagens["i"]:0 ?>],
-          ['tijolo', <?php echo isset($contagens["u"])?$contagens["u"]:0 ?>],
-          ['cimento', <?php echo isset($contagens["y"])?$contagens["y"]:0 ?>],
+          ['areia', <?php echo isset($contagens["Feminino"])?$contagens["Feminino"]:2 ?>],
+          ['terra', <?php echo isset($contagens["Outro"])?$contagens["Outro"]:3 ?>],
+          
+          ['torneira', <?php echo isset($contagens["o"])?$contagens["o"]:4 ?>],
+          ['mangueira', <?php echo isset($contagens["i"])?$contagens["i"]:5 ?>],
+          ['tijolo', <?php echo isset($contagens["u"])?$contagens["u"]:6 ?>],
+          ['cimento', <?php echo isset($contagens["y"])?$contagens["y"]:7 ?>],
+
+          
         ]);
+        
 
       var options = {
         chart: {

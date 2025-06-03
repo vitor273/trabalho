@@ -159,7 +159,7 @@ else{
     </style>
         <hr/>
         <nav>
-           &nbsp;&nbsp;<a href="inicial.php" style="color: white; text-decoration: none">HOME |</a><a href="listagem.php" style="color: white; text-decoration: none"> PRODUTOS|</a><a href="gravar.php" style="color: white; text-decoration: none"> SALVAR DADOS | </a><a href="registrodiario.php" style="color white; text-decoration; none"> REFUGO</a> 
+           &nbsp;&nbsp;<a href="inicial.php" style="color: white; text-decoration: none">HOME |</a><a href="listagem.php" style="color: white; text-decoration: none"> PRODUTOS | </a><a href="registrodiario.php" style="color white; text-decoration; none"> REFUGO</a> 
            <div class="user">
                 <b style="color: white"><?php echo $nomes[$id]; ?> |</b> <a href="sair.php" style="color: white; text-decoration: none">SAIR</a>&nbsp;&nbsp;
            </div>

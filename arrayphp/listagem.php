@@ -73,7 +73,10 @@ if (isset($_GET['pesquisa'])) {
   </style>
   <hr>
   <nav>
-    &nbsp;&nbsp;<a href="inicial.php" style="color: white; text-decoration: none">HOME |</a><a href="listagem.php" style="color: white; text-decoration: none">  PRODUTOS |</a><a href="gravar.php" style="color: white; text-decoration: none"> SALVAR DADOS |</a><a href="registrodiario.php" style="color white text-decoration none">REFUGO</a> 
+           &nbsp;&nbsp;<a href="inicial.php" style="color: white; text-decoration: none">HOME |</a><a href="listagem.php" style="color: white; text-decoration: none"> PRODUTOS | </a><a href="registrodiario.php" style="color white; text-decoration; none"> REFUGO</a> 
+           <div class="user">
+           </div>
+        </nav>
   </head>
 <body><div class="container-fluid"></div>
 <div class="container py-5">
@@ -99,6 +102,7 @@ if (isset($_GET['pesquisa'])) {
       </tr>
     </thead>
     <tbody>
+      <? $i = 0?>
       <?php foreach ($resultados as $i): ?>
         <tr>
           <td><?= $i ?></td>
