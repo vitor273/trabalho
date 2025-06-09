@@ -22,7 +22,7 @@ foreach ($produtos as $produto) {
   <a href="inicial.php" class="btn btn-secondary"> ← Voltar ao Menu</a>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
-    
+
     body {
       background-color: #0e0e0e;
       color: white;
@@ -73,7 +73,7 @@ foreach ($produtos as $produto) {
         y: { ticks: { color: 'white' } }
       }
     };
-
+    
     // Gráfico de barras
     new Chart(document.getElementById("graficoBarra"), {
       type: "bar",

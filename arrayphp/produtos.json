@@ -52,5 +52,23 @@
         "quantidade": 400,
         "refugadas": 40,
         "tempo": 30
+    },
+    {
+        "nome": "pirulito",
+        "quantidade": 421,
+        "refugadas": 72,
+        "tempo": 44
+    },
+    {
+        "nome": "chuteira",
+        "quantidade": 400,
+        "refugadas": 40,
+        "tempo": 309
+    },
+    {
+        "nome": "chuteira",
+        "quantidade": 400,
+        "refugadas": 40,
+        "tempo": 309
     }
 ]

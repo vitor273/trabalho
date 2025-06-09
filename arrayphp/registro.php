@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (isset($_SESSION['usuario'])) {
+if (isset($_SESSION[''])) {
     header("Location: inicial.php");
     exit;
 }
@@ -31,27 +31,22 @@ if (isset($_SESSION['usuario'])) {
     <br>
     </br>
     <div class="login-container">
-        <h3 class="text-center mb-4">🔐 Login</h3>
+        <h3 class="text-center mb-4">Novo Usuario</h3>
         <?php if (isset($_GET['erro'])): ?>
-            <div class="alert alert-danger text-center">Credenciais inválidas</div>
+            <div class="alert alert-danger text-center">Credenciais ja Existentes</div>
         <?php endif; ?>
         <form action="login.php" method="post">
             <div class="mb-3">
-                <label for="email" class="form-label">E-mail</label>
+                <label for="email" class="form-label">Novo E-mail</label>
                 <input type="email" class="form-control" name="email" id="email" required placeholder="Digite seu email">
             </div>
             <div class="mb-3">
-                <label for="senha" class="form-label">Senha</label>
+                <label for="senha" class="form-label">Nova Senha</label>
                 <input type="password" class="form-control" name="senha" id="senha" required placeholder="Digite sua senha">
             </div>
             <div class="d-grid">
-                <button class="btn btn-primary" type="submit">Entrar</button>
+                <button class="btn btn-primary" type="submit">Registrar-se</button>
             </div>
-            <body>
-            <nav class="navbar navbar-expand-lg navbar-dark px-4 py-3">
-            &nbsp; &nbsp;<a class="navbar-brand">nao tem conta?</a>
-        <a href="registro.php">registrar-se</a>
-        </body>
         </form>
     </div>
 </body>
